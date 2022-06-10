@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7c66847a9a3421cb382165a7d51c8a6, type: 3}
-  m_Name: Enemy
+  m_Name: Enemy_Boss_Final
   m_EditorClassIdentifier: 
   attack: 1
-  attackRange: 0.75
+  attackRange: 0.8
   followRange: 12
   health: 10
-  maxHealth: 10
-  moveSpeed: 1.25
+  maxHealth: 20
+  moveSpeed: 1.5
