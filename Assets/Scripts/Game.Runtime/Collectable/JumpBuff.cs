@@ -3,16 +3,15 @@ using UnityEngine;
 
 namespace Game.Runtime.Collectable
 {
-    public class Heart : Collectable
+    public class JumpBuff : Collectable
     {
         public float value;
 
         protected override bool Collect(Collider2D other)
         {
-            CharacterStatsController characterStatsController;
-            ColliderDictionary.CharacterStatsControllers.TryGetValue(other, out characterStatsController);
+            ColliderDictionary.CharacterStatsControllers.TryGetValue(other, out CharacterStatsController characterStatsController);
             if (characterStatsController == null) return false;
-            characterStatsController.Heal(value);
+            characterStatsController.JumpBuff(value);
             return true;
         }
     }
